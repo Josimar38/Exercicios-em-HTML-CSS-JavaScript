@@ -1,0 +1,33 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+.tabela {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+}
+td:hover {
+  border-color: gray;
+}
+.vertical {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 100px;
+}
+.horizontal {
+  padding: 100px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.baixo {
+  padding: 100px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOGO DOIS</title>
+</head>
+
+<body>
+  <h1>Tente adivinhar o numero!</h1>
+  <h2 id="h2"></h2>
+  <script>
+    let numero = Math.floor(Math.random() * 10 + 1);
+    let tentativa;
+    while (tentativa != numero) {
+      tentativa = Number(prompt("Digite um número até acertar:"));
+      if (tentativa < numero) {
+        alert("Muito baixo.Tente de novo.");
+      } if (tentativa > numero) {
+        alert("Muito alto.Tente de novo.");
+      } if (tentativa == numero) {
+        alert("Parabéns! Você acertou.");
+        document.getElementById("h2").innerHTML = "Parabéns! Você acertou.";
+      }
+    } 
+  </script>
+</body>
+
+</html>

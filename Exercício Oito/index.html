@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Par ou Impar</title>
+</head>
+<body>
+  <script>
+    let usuario = Number(prompt("Digite um numero: "));
+    function verificaPar(numero) {
+      if (numero % 2 == 0) {
+        return `O numero ${numero} e par.`;
+      }
+      else if (numero % 2 == 1) {
+        return `O numero ${numero} e impar.`;
+      }
+    }
+    alert(verificaPar(usuario));
+  </script>
+</body>
+</html>

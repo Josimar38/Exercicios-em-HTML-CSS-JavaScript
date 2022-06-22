@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOGO TRÊS</title>
+</head>
+<body>
+  <h1>Tente adivinhar o numero!</h1>
+  <h2 id="h2"></h2>
+  <h3 id="h3"></h3>
+  <h4 id="h4"></h4>
+  <script>
+    let numero = Math.floor(Math.random() * 10 + 1);
+    let tentativa;
+    let vezes = 0;
+    while (tentativa != numero) {
+      tentativa = Number(prompt("Digite um número até acertar:"));
+      if (tentativa <= numero || tentativa >= numero) {
+        vezes++;
+      }
+      if (vezes >= 5) {
+        alert("Acabou as cinco tentativas: TCHAU.");
+        document.getElementById("h4").innerHTML = "Acabou as cinco tentativas: TCHAU.";
+        break;
+      }
+      if (tentativa < numero) {
+        alert("Muito baixo.Tente de novo.");
+      } if (tentativa > numero) {
+        alert("Muito alto.Tente de novo.");
+      } if (tentativa == numero) {
+        alert("Parabéns! Você acertou.");
+        alert("Parabéns! Você acertou em " + vezes + " tentativas.");
+        document.getElementById("h2").innerHTML = "Parabéns! Você acertou.";
+        document.getElementById("h3").innerHTML = `Parabéns! Você acertou em ${vezes} tentativas.`;
+      }
+    } 
+  </script>
+</body>
+</html>

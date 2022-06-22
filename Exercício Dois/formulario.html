@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <div>
+    <h1>Registro</h1>
+    <form action="" method="get">
+      <p><label>Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required></label>
+        <label>Sobrenome: <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome"
+            required></label>
+      </p>
+      <p><label>Masculino<input type="radio" name="sex" id="masc" checked></label> <label>Feminino<input type="radio"
+            name="sex" id="fem"></label></p>
+      <p><label>Email: <input type="email" name="email" id="email" placeholder="Digite seu email" required></label>
+        <label> Password: <input type="password" name="senha" id="senha" minlength="5" maxlength="10"
+            placeholder="Digite seu password" required></label>
+      </p>
+      <p><label>Aniversário: <input type="date" name="data" id="data" required></label></p>
+      <p><label>Concordo com os termos e condições <input type="checkbox" name="concorda" id="concorda"
+            required></label>
+      </p>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+  </div>
+</body>
+</html>

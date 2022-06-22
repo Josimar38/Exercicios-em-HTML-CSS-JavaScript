@@ -1,0 +1,23 @@
+body{
+	background: url(../imagens/air-bubbles-230014_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	color: blue;
+	background: green;
+}
+h2{
+	color: #FFF;
+
+	/*definindo as tres propriedades da borda de forma separada*/
+    /*border-color: purple; */ /*cor da borda*/
+	/*border-width: 2px;*/ /*largura da borda em pixels*/
+	/*border-style: solid;*/ /*estilo da borda - solid: solida, dashed: tracejada, dotted: pontilhada*/
+
+	border: 5px dashed purple; /*definindo as tres propriedades da borda de uma vez*/
+}
+p{
+	color: rgb(62, 179, 36);
+	background: rgb(255,100,80);
+}

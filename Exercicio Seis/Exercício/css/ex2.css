@@ -1,0 +1,75 @@
+/*Elemento/Tag*/
+li{
+	color: darkBlue;
+}
+a{
+	text-decoration: none;
+}
+
+/*ID*/
+#banana{
+	color: yellow;
+}
+#laranja{
+	color: orange;
+}
+#Frutas_e_Legumes{
+	border: 1px dashed lightGrey;
+}
+
+/*Classes*/
+.verde{
+	color: green;
+}
+.background_cinza{
+	background-color: lightGrey;
+}
+
+/*Asterisco*/
+* {
+	/*border: 1px solid lightGrey;*/
+}
+
+/*Seletor de Descendencia*/
+li a { /*afeta todos os descendentes: filhos, netos, etc.*/
+	color: red;
+}
+/*li > a{color:red;}*/ /*afeta apenas os descendentes diretos: filhos*/
+
+
+/*Seletor Adjacente*/
+h4 + ul {
+	border: 3px solid red;
+}
+
+/*Seletor de Atributo*/
+a[href="http://www.ifrs.edu.br"]{
+	background: blue;
+	color: white;
+}
+
+/*Seletor enésimo do tipo*/
+/*li:nth-of-type(3){
+	background: #FFFF00;
+}*/
+li:nth-of-type(even){
+	background: #FFFF00;
+}
+li:nth-of-type(odd){
+	background: #17D42D;
+}
+
+/*Seletor de pseudo-classe*/
+li a:link{ /*links ainda não visitados*/
+	color: black;
+}
+li a:visited{ /*links que ja foram visitados*/
+	color: grey;
+}
+li a:hover{ /*quando o mouse está em cima do link, sem clicar*/
+	color: #0714A3;
+	background: #85D0FF
+}
+li a:active{  /*quando o mouse está em cima do link, clicando*/
+	color:white;
+}
